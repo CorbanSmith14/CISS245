@@ -1,0 +1,115 @@
+\input{thispreamble.tex}
+
+\renewcommand\AUTHOR{crsmith14@cougars.ccis.edu} % CHANGE TO YOURS
+
+\begin{document}
+\topmattertwo
+
+If the code has an error (either it has a syntax error and
+does not compile or it has a runtime error and crashes when you run it),
+write ERROR.
+
+For the first few quizzes, you enter your answer in \verb!main.txt!
+and email me the file as an attachment.
+
+This is a 10-minute, no computer quiz. After you are done, you can
+check with a computer ane make corrections.
+But if you run out of time or have to make corrections, it means you have
+not fully studied my CISS240 materials.
+
+Q0. $41 + 1 = $ \answerbox{41}
+
+\nextq
+The string length of
+\verb!"hello \tworld\n???\n"!
+is \answerbox{}.
+
+
+\nextq
+In the following code fragment, the output is \verb!132!.
+The value of integer variable \verb!n! is a power of 10.
+Therefore the value of \verb!n! is \answerbox{}.
+\begin{Verbatim}[frame=single]
+std::cout << 132435 / n << '\n';
+\end{Verbatim}
+
+
+\nextq
+In the following code fragment, the output is \verb!2435!.
+The value of integer variable \verb!n! is a power of 10.
+Therefore the value of \verb!n! is \answerbox{}.
+\begin{Verbatim}[frame=single]
+std::cout << 132435 % n << '\n';
+\end{Verbatim}
+
+
+\nextq
+In the following code fragment, the output is \verb!32!.
+The values of integer variables \verb!m! and \verb!n! are
+powers of 10.
+Therefore
+the value of \verb!m! is \answerbox{}
+and
+the value of \verb!n! is \answerbox{}
+\begin{Verbatim}[frame=single]
+std::cout << 132435 / m % n << '\n';
+\end{Verbatim}
+
+
+\nextq
+\tf:
+(T = true, F = false, M = statement is meaningless and cannot be answered.)
+You cannot assign an integer value to a \verb!double! variable.
+In other words the code fragment below is invalid C++.
+\dotfill\answerbox{}
+\begin{Verbatim}[frame=single]
+double x = 42;
+\end{Verbatim}
+
+\nextq
+The output of the following code fragment is 
+\dotfill\answerbox{}
+\begin{Verbatim}[frame=single]
+int x = 4, y = 0;
+std::cout << x / y;
+\end{Verbatim}
+
+\nextq
+The output of the following code fragment is 
+\dotfill\answerbox{}
+\begin{Verbatim}[frame=single]
+int x = 4, y = 1;
+std::cout << x / y;
+\end{Verbatim}
+
+\nextq
+The output of the following code fragment is 
+\dotfill\answerbox{}
+\begin{Verbatim}[frame=single]
+int x = 4, y = 4;
+std::cout << x / y;
+\end{Verbatim}
+
+\nextq
+The output of the following code fragment is 
+\dotfill\answerbox{}
+\begin{Verbatim}[frame=single]
+int x = 4, y = 8;
+std::cout << x / y;
+\end{Verbatim}
+
+\nextq
+The output of the following code fragment is 
+\dotfill\answerbox{}
+\begin{Verbatim}[frame=single]
+int x = 4, y = 8;
+std::cout << double(x / y);
+\end{Verbatim}
+
+
+
+\newpage
+\input{instructions.tex}
+
+\end{document}
+\begin{Verbatim}[frame=single]

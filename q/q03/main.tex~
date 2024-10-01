@@ -1,0 +1,69 @@
+\input{myquizpreamble}
+\input{yliow}
+\input{ciss350}
+\renewcommand\TITLE{Quiz 01}
+
+\renewcommand\textwhite[1]{#1}
+\begin{document}
+\topmatter
+
+Q1.
+Name your C++ source file \verb!q01-01.cpp!.
+Write a function \verb!replaces()! that replaces a character
+in a C-string with another.
+For instance suppose you have
+\begin{console}
+char x[1024] = "helloworld";
+\end{console}
+If you call
+\begin{console}
+replace(x, 'o', 'a');
+\end{console}
+and then you print \verb!x!, the output is
+\begin{console}
+hellawarld
+\end{console}
+(HINT: Don't forget that C-strings must end with \verb!'\0'!.)
+
+Here's the execution of an actual test case:
+\begin{console}[commandchars=\\\{\}]
+\underline{helloworld}
+hellawarld
+\end{console}
+
+Q2.
+Name your C++ source file \verb!q01-02.cpp!.
+Write a function \verb!remove()! that removes a character
+in a C-string.
+For instance suppose you have
+\begin{console}
+char x[1024] = "helloworld";
+\end{console}
+If you call
+\begin{console}
+remove(x, 'o');
+\end{console}
+and then you print \verb!x!, the output is
+\begin{console}
+hellwrld
+\end{console}
+
+Here's the execution of an actual test case:
+\begin{console}[commandchars=\\\{\}]
+\underline{helloworld}
+hellwrld
+\end{console}
+(HINT: Don't forget that C-strings must end with \verb!'\0'!.)
+
+\textsc{Aside}
+Once you are done with the above, you should write a function
+\begin{console}
+void replace(char x[], char y[], char z[]);
+\end{console}
+that replaces all substrings \verb!y! with that appear in \verb!x!
+with \verb!z!.
+The case when \verb!y! and \verb!z! both have string length 1
+is the same as Q1 and the
+case when \verb!y! has length 1 and \verb!z! has length 0
+is the same as Q2.
+\end{document}
